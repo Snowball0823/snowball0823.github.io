@@ -1,0 +1,90 @@
+[
+  {
+    "title": "ECA: Efficient Continual Alignment for Open-Ended Image-to-Text Generation",
+    "venue": "ICML 2026",
+    "status": "accepted",
+    "selected": true,
+    "topic": "Continual Learning, Vision-Language Models",
+    "links": {
+      "paper": "https://openreview.net/forum?id=UfiLIUtbSO",
+      "code": "https://github.com/Snowball0823/ECA"
+    }
+  },
+  {
+    "title": "WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems",
+    "venue": "ICML 2026 Spotlight",
+    "status": "accepted",
+    "selected": true,
+    "topic": "World Models",
+    "links": {
+      "paper": "https://arxiv.org/abs/2603.14392",
+      "code": "https://github.com/511205787/WestWorld",
+      "project": "https://westworldrobot.github.io/"
+    }
+  },
+  {
+    "title": "ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment",
+    "venue": "ICLR 2026",
+    "status": "accepted",
+    "selected": true,
+    "topic": "Alignment",
+    "links": {
+      "paper": "https://openreview.net/forum?id=CFewUmgIIL",
+      "code": "https://github.com/ZhaoHongjue/odesteer",
+      "project": "https://odesteer.github.io/"
+    }
+  },
+  {
+    "title": "YoooP: You Only Optimize One Prototype per Class for Non-Exemplar Incremental Learning",
+    "venue": "TMLR 2025",
+    "status": "accepted",
+    "selected": true,
+    "topic": "Continual Learning",
+    "links": {
+      "paper": "https://openreview.net/forum?id=FYe66NLDkO",
+      "code": "https://github.com/Snowball0823/YoooP"
+    }
+  },
+  {
+    "title": "Lens: A Knowledge-Guided Foundation Model for Network Traffic",
+    "venue": "Under Review",
+    "status": "under-review",
+    "selected": false,
+    "topic": "Foundation Models"
+  },
+  {
+    "title": "Hybrid Memory Replay: Blending Real and Distilled Data for Class Incremental Learning",
+    "venue": "arXiv",
+    "status": "preprint",
+    "selected": false,
+    "topic": "Continual Learning"
+  },
+  {
+    "title": "DSAM: A Distance Shrinking with Angular Marginalizing Loss for High Performance Vehicle Re-Identification",
+    "venue": "arXiv",
+    "status": "preprint",
+    "selected": false,
+    "topic": "Representation Learning"
+  },
+  {
+    "title": "Global and Local Deep Feature Representation Fusion for Vehicle Re-Identification",
+    "venue": "VCIP",
+    "status": "published",
+    "selected": false,
+    "topic": "Computer Vision"
+  },
+  {
+    "title": "Spatial Temporal Attentional Glimpse for Human Activity Classification in Video",
+    "venue": "ICIP",
+    "status": "published",
+    "selected": false,
+    "topic": "Computer Vision"
+  },
+  {
+    "title": "WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotics",
+    "venue": "ICLR 2026 Workshop",
+    "status": "workshop",
+    "selected": false,
+    "topic": "World Models"
+  }
+]

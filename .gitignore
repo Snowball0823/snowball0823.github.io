@@ -1,0 +1,44 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Local environment and caches
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node/Astro caches if this static site is migrated later
+node_modules/
+.astro/
+dist/
+.vercel/
+.netlify/
+*.log
+
+# Temporary/generated local files
+tmp/
+temp/
+*.tmp
+
+# Original photo drop folder.
+# The published gallery uses assets/images/photography/curated/ via data/photos.json.
+assets/images/photography/gallery/
+
+# Large source photo formats should stay local unless intentionally exported.
+*.arw
+*.cr2
+*.cr3
+*.dng
+*.nef
+*.raf
+*.raw
+*.heic

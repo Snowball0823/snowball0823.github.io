@@ -1,0 +1,563 @@
+[
+  {
+    "src": "assets/images/photography/curated/galaxy-01.jpg",
+    "title": "Desert Sky Arc",
+    "category": "Galaxy",
+    "location": "Arches National Park, Utah",
+    "caption": "A low desert horizon under a wide band of stars.",
+    "layout": "large",
+    "country": "United States",
+    "tags": [
+      "milky way",
+      "desert",
+      "red rock",
+      "night sky"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/lake-01.jpg",
+    "title": "Golden Mirror",
+    "category": "Travel",
+    "location": "North Lake, Bishop, California",
+    "caption": "A mountain ridge reflected in autumn color.",
+    "layout": "wide",
+    "country": "United States",
+    "tags": [
+      "north lake",
+      "bishop",
+      "alpine lake",
+      "autumn",
+      "reflection",
+      "sierra"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/valley-01.jpg",
+    "title": "Valley Afterglow",
+    "category": "Travel",
+    "location": "Tunnel View, Yosemite National Park, California",
+    "caption": "Late light moving through a granite corridor.",
+    "layout": "large",
+    "country": "United States",
+    "tags": [
+      "yosemite",
+      "granite valley",
+      "sunset",
+      "national park"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/coast-02.jpg",
+    "title": "Island Spine",
+    "category": "Travel",
+    "location": "Rituo Temple, Yamdrok Lake, Tibet",
+    "caption": "A narrow strip of land suspended in water.",
+    "layout": "tall",
+    "country": "China",
+    "tags": [
+      "rituo temple",
+      "yamdrok lake",
+      "tibet",
+      "island",
+      "aerial view",
+      "shoreline"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/galaxy-05.jpg",
+    "title": "Lake Under Stars",
+    "category": "Galaxy",
+    "location": "Convict Lake, Eastern Sierra, California",
+    "caption": "Still water catching a vertical seam of night.",
+    "layout": "wide",
+    "country": "United States",
+    "tags": [
+      "milky way",
+      "convict lake",
+      "eastern sierra",
+      "alpine lake",
+      "reflection",
+      "night sky"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/ice-01.jpg",
+    "title": "Ice Cathedral",
+    "category": "Snow",
+    "location": "Glacier Field, Alaska",
+    "caption": "Blue-white ice shaped into a quiet monument.",
+    "layout": "large",
+    "country": "United States",
+    "tags": [
+      "glacier",
+      "ice",
+      "snow",
+      "blue hour"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/ice-03.jpg",
+    "title": "Glacial Basin",
+    "category": "Snow",
+    "location": "Glacier Field, Alaska",
+    "caption": "Meltwater and ice arranged in pale geometry.",
+    "layout": "wide",
+    "country": "United States",
+    "tags": [
+      "alaska",
+      "glacier",
+      "meltwater",
+      "ice field",
+      "snow"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/dune-01.jpg",
+    "title": "Dune Edge",
+    "category": "Desert",
+    "location": "Mesquite Flat Sand Dunes, Death Valley National Park, California",
+    "caption": "Sunlight spilling over a clean curve of sand.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "death valley",
+      "mojave desert",
+      "sand dunes",
+      "sunset"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/city-01.jpg",
+    "title": "Coastal Night Grid",
+    "category": "City",
+    "location": "Chicago, Illinois",
+    "caption": "Street light running beside dark water.",
+    "layout": "wide",
+    "country": "United States",
+    "tags": [
+      "city lights",
+      "lakefront",
+      "night",
+      "aerial"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/canyon-01.jpg",
+    "title": "River Bend",
+    "category": "Desert",
+    "location": "Horseshoe Bend, Arizona",
+    "caption": "Water carving a green curve through red stone.",
+    "layout": "wide",
+    "country": "United States",
+    "tags": [
+      "canyon",
+      "river bend",
+      "red rock",
+      "southwest"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/mountain-02.jpg",
+    "title": "Turquoise Basin",
+    "category": "Travel",
+    "location": "Garze, Sichuan",
+    "caption": "Blue water held by stone and grass.",
+    "layout": "standard",
+    "country": "China",
+    "tags": [
+      "garze",
+      "sichuan",
+      "turquoise lake",
+      "alpine",
+      "mountains",
+      "high country"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/coast-01.jpg",
+    "title": "Coastal Curve",
+    "category": "Travel",
+    "location": "Shengxiang Tianmen, Namtso, Tibet",
+    "caption": "A pale road and a blue shore bending together.",
+    "layout": "standard",
+    "country": "China",
+    "tags": [
+      "shengxiang tianmen",
+      "namtso",
+      "tibet",
+      "lake",
+      "cliffs",
+      "shoreline",
+      "blue water"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/galaxy-04.jpg",
+    "title": "Granite Night",
+    "category": "Galaxy",
+    "location": "Yosemite Valley, California",
+    "caption": "A pale galactic trail over a quiet granite valley.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "milky way",
+      "granite",
+      "valley",
+      "night sky"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/harbor-01.jpg",
+    "title": "Harbor Lines",
+    "category": "City",
+    "location": "Grant Park, Chicago, Illinois",
+    "caption": "Masts and reflections arranged against night.",
+    "layout": "wide",
+    "country": "United States",
+    "tags": [
+      "grant park",
+      "chicago",
+      "harbor",
+      "sailboats",
+      "night",
+      "reflections"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/galaxy-03.jpg",
+    "title": "Star Field and Stone",
+    "category": "Galaxy",
+    "location": "Arches National Park, Utah",
+    "caption": "A darker frame where stone silhouettes hold the sky.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "milky way",
+      "stone silhouettes",
+      "desert",
+      "night sky"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/west-02.jpg",
+    "title": "Road to the Mesas",
+    "category": "Desert",
+    "location": "Monument Valley, Arizona/Utah",
+    "caption": "A straight road pulling the eye into distance.",
+    "layout": "wide",
+    "country": "United States",
+    "tags": [
+      "monument valley",
+      "road",
+      "mesa",
+      "desert"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/galaxy-02.jpg",
+    "title": "Night Over the Buttes",
+    "category": "Galaxy",
+    "location": "Monument Valley, Arizona/Utah",
+    "caption": "Warm earth and cold sky meeting under the Milky Way.",
+    "layout": "wide",
+    "country": "United States",
+    "tags": [
+      "milky way",
+      "desert",
+      "monument valley",
+      "night sky"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/coast-03.jpg",
+    "title": "Pacific Edge",
+    "category": "Travel",
+    "location": "Big Sur, California",
+    "caption": "Fog, cliffs, and a saturated line of sea.",
+    "layout": "wide",
+    "country": "United States",
+    "tags": [
+      "coast",
+      "cliffs",
+      "pacific",
+      "fog"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/ice-02.jpg",
+    "title": "Blue Divide",
+    "category": "Snow",
+    "location": "Glacier Field, Alaska",
+    "caption": "A cold ridge line dissolving into soft cloud.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "glacier",
+      "snow",
+      "ice field",
+      "winter"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/mountain-03.jpg",
+    "title": "Glacier Floor",
+    "category": "Travel",
+    "location": "Tibet",
+    "caption": "A grey glacier field opening into cold water.",
+    "layout": "wide",
+    "country": "China",
+    "tags": [
+      "tibet",
+      "glacier",
+      "icefield",
+      "rock valley",
+      "high plateau"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/desert-01.jpg",
+    "title": "Desert Gesture",
+    "category": "Desert",
+    "location": "Mojave Desert, California",
+    "caption": "A bent tree drawing a line across warm air.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "desert",
+      "tree",
+      "open plain",
+      "warm light"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/city-03.jpg",
+    "title": "Canal Night",
+    "category": "City",
+    "location": "Chicago River, Chicago, Illinois",
+    "caption": "Water carrying a strip of downtown light.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "river",
+      "architecture",
+      "night",
+      "city lights"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/west-01.jpg",
+    "title": "Open Monument",
+    "category": "Desert",
+    "location": "Monument Valley, Arizona/Utah",
+    "caption": "Three forms standing in clear desert air.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "monument valley",
+      "desert",
+      "mesa",
+      "red rock"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/canyon-02.jpg",
+    "title": "Canyon Light",
+    "category": "Desert",
+    "location": "Grand Canyon National Park, Arizona",
+    "caption": "Evening light layered over a deep horizon.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "canyon",
+      "sunrise",
+      "desert",
+      "southwest"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/abstract-01.jpg",
+    "title": "Black Oval",
+    "category": "Abstract",
+    "location": "Interior Study",
+    "caption": "A quiet silhouette held against a pale field.",
+    "layout": "square",
+    "focus": "50% 35%",
+    "country": "United States",
+    "tags": [
+      "abstract",
+      "silhouette",
+      "minimal",
+      "black and white"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/valley-02.jpg",
+    "title": "River Meadow",
+    "category": "Travel",
+    "location": "Yosemite Valley, Yosemite National Park, California",
+    "caption": "Water, trees, and rock faces held in still air.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "yosemite",
+      "river",
+      "meadow",
+      "granite"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/mountain-01.jpg",
+    "title": "Green Valley",
+    "category": "Travel",
+    "location": "Daocheng Yading, Sichuan",
+    "caption": "A small road threading through mountain color.",
+    "layout": "tall",
+    "country": "China",
+    "tags": [
+      "daocheng yading",
+      "sichuan",
+      "mountain valley",
+      "alpine",
+      "road",
+      "green valley"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/arch-01.jpg",
+    "title": "Stone Window",
+    "category": "Desert",
+    "location": "Delicate Arch, Arches National Park, Utah",
+    "caption": "Red rock cut open beneath a blue sky.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "arch",
+      "red rock",
+      "utah",
+      "desert"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/galaxy-06.jpg",
+    "title": "Mountain Sky Column",
+    "category": "Galaxy",
+    "location": "Port Angeles, Olympic Peninsula, Washington",
+    "caption": "A column of starlight rising behind a dark ridge.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "milky way",
+      "olympic peninsula",
+      "port angeles",
+      "mountain ridge",
+      "night sky"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/autumn-01.jpg",
+    "title": "Autumn Range",
+    "category": "Travel",
+    "location": "Bishop, California",
+    "caption": "Yellow brush and blue distance under hard sun.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "bishop",
+      "eastern sierra",
+      "autumn",
+      "aspen",
+      "mountain slope",
+      "sierra"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/dune-02.jpg",
+    "title": "White Sands Road",
+    "category": "Desert",
+    "location": "Mesquite Flat Sand Dunes, Death Valley National Park, California",
+    "caption": "A bright desert surface running into distant color.",
+    "layout": "wide",
+    "country": "United States",
+    "tags": [
+      "death valley",
+      "mojave desert",
+      "dune ridge",
+      "horizon"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/road-01.jpg",
+    "title": "Mountain Road",
+    "category": "Travel",
+    "location": "Mount Rainier National Park, Washington",
+    "caption": "A road frame with snow and forest at the edge.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "mount rainier",
+      "road",
+      "forest",
+      "snow peak"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/abstract-02.jpg",
+    "title": "White Geometry",
+    "category": "Abstract",
+    "location": "Interior Study",
+    "caption": "Black and white planes meeting at a clean angle.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "abstract",
+      "geometry",
+      "minimal",
+      "black and white"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/lake-02.jpg",
+    "title": "Volcanic Lake",
+    "category": "Travel",
+    "location": "Mount Rainier National Park, Washington",
+    "caption": "A bright basin set below a quiet peak.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "mount rainier",
+      "lake",
+      "forest",
+      "reflection"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/city-02.jpg",
+    "title": "Vertical City",
+    "category": "City",
+    "location": "Chicago, Illinois",
+    "caption": "A high view of traffic and luminous blocks.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "city grid",
+      "downtown",
+      "night",
+      "aerial"
+    ]
+  },
+  {
+    "src": "assets/images/photography/curated/abstract-03.jpg",
+    "title": "Yellow Plane",
+    "category": "Abstract",
+    "location": "Interior Study",
+    "caption": "A yellow surface cutting across a white wall.",
+    "layout": "standard",
+    "country": "United States",
+    "tags": [
+      "abstract",
+      "geometry",
+      "yellow",
+      "minimal"
+    ]
+  }
+]

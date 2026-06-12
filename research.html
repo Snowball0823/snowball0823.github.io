@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research | Jiangtao Kong</title>
+    <meta name="description" content="Research themes of Jiangtao Kong: continual learning for classical computer vision models, vision-language models, world models, and world-model-based online reinforcement learning.">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <meta name="theme-color" content="#080b10">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html"><strong>Jiangtao Kong</strong></a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle><span></span></button>
+        <div class="nav-links" data-nav-links>
+          <a href="index.html">Home</a>
+          <a href="research.html" aria-current="page">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="photography.html">Photography</a>
+          <a class="nav-me" href="about.html">ME</a>
+          <a href="resume/Snowball_Resume_CN.pdf">CV</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero research-page-hero">
+        <div class="section-inner research-hero-grid">
+          <div class="research-hero-copy">
+            <h1>Research</h1>
+            <p>
+              My research centers on continual learning: enabling AI systems to learn
+              from non-stationary streams of data, tasks, and modalities while retaining
+              previously acquired knowledge. I study this problem across classical
+              computer vision models, vision-language models, world models, and
+              world-model-based online reinforcement learning.
+            </p>
+            <div class="research-chip-row" aria-label="Research interests">
+              <span>Continual Learning</span>
+              <span>Multimodal Models</span>
+              <span>World Models</span>
+              <span>World-Model-Based Online RL</span>
+            </div>
+          </div>
+          <figure class="research-hero-visual">
+            <picture>
+              <source srcset="assets/images/figures/continual-learning-hero.webp" type="image/webp">
+              <img src="assets/images/figures/continual-learning-hero.jpg" alt="Cinematic illustration of continual learning across modalities">
+            </picture>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="section-inner">
+          <h2 class="section-title">Research Themes</h2>
+          <div class="research-theme-grid">
+            <article class="research-theme-card primary">
+              <h3>Continual Learning</h3>
+              <p>
+                I study continual learning for models trained on non-stationary data
+                streams, where new classes, tasks, modalities, or distributions arrive
+                over time. The goal is to learn new knowledge while mitigating
+                catastrophic forgetting under memory and compute constraints.
+              </p>
+              <ul>
+                <li>Class-incremental and exemplar-free learning</li>
+                <li>Prototype-based representation consolidation</li>
+                <li>Knowledge retention, forward transfer, and replay</li>
+              </ul>
+              <div class="related-work">
+                <span>Related Work</span>
+                <div>
+                  <a href="publications.html#eca">ECA · ICML 2026</a>
+                  <a href="publications.html#yooop">YoooP · TMLR 2025</a>
+                  <a href="publications.html#hybrid-memory-replay">Hybrid Memory Replay · arXiv</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="research-theme-card primary">
+              <h3>World Models</h3>
+              <p>
+                I study world models as predictive representations of environment
+                dynamics, especially trajectory-level models that generalize across
+                systems. The goal is to support structured dynamics prediction,
+                planning, control, and world-model-based online reinforcement learning.
+              </p>
+              <ul>
+                <li>Knowledge-encoded trajectory world models</li>
+                <li>System-aware dynamics prediction</li>
+                <li>Planning and policy learning with learned models</li>
+              </ul>
+              <div class="related-work">
+                <span>Related Work</span>
+                <div>
+                  <a href="publications.html#westworld">WestWorld · ICML 2026 <strong>Spotlight</strong></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="research-theme-card">
+              <h3>Continual Alignment for LLMs / MLLMs</h3>
+              <p>
+                I study continual alignment and adaptation for pretrained LLMs and
+                MLLMs under evolving tasks, distributions, and preferences. The goal is
+                to update model behavior while preserving pretrained capabilities,
+                cross-modal alignment, and general instruction-following ability.
+              </p>
+              <ul>
+                <li>Continual alignment for pretrained MLLMs</li>
+                <li>Capability preservation under distribution shift</li>
+                <li>Activation steering and preference alignment</li>
+              </ul>
+              <div class="related-work">
+                <span>Related Work</span>
+                <div>
+                  <a href="publications.html#eca">ECA · ICML 2026</a>
+                  <a href="publications.html#odesteer">ODESteer · ICLR 2026</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="section-inner">
+          <h2 class="section-title">Research Arc</h2>
+          <div class="research-arc">
+            <article>
+              <time>2018 - 2020</time>
+              <h3>Classical Computer Vision</h3>
+              <p>
+                I began with classical computer vision problems such as vehicle
+                re-identification and human activity recognition, focusing on visual
+                representation learning, metric learning, and spatiotemporal modeling.
+              </p>
+            </article>
+            <article>
+              <time>2023 - Present</time>
+              <h3>Continual Learning</h3>
+              <p>
+                My research then moved toward continual learning, studying how models
+                retain knowledge and acquire new capabilities from sequential tasks,
+                classes, and distributions under memory and compute constraints.
+              </p>
+            </article>
+            <article>
+              <time>2024 - Present</time>
+              <h3>MLLM / LLM Alignment</h3>
+              <p>
+                I extended this continual learning perspective to pretrained MLLMs and
+                LLMs, where adaptation must preserve pretrained capabilities,
+                cross-modal alignment, and general instruction-following behavior.
+              </p>
+            </article>
+            <article>
+              <time>2025 - Present</time>
+              <h3>World Models</h3>
+              <p>
+                My recent work studies world models as structured predictive
+                representations of environment dynamics, moving from static perception
+                toward trajectory prediction, planning, and control.
+              </p>
+            </article>
+            <article>
+              <time>2026 - Present</time>
+              <h3>World-Model-Based Online RL</h3>
+              <p>
+                I am now interested in how learned world models can support online
+                reinforcement learning, where predictive models, planning procedures,
+                and policies improve from newly collected trajectories.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="section-inner">
+          <div class="research-link-panel">
+            <h2>Looking for the full paper list?</h2>
+            <p>
+              The Publications page includes accepted papers, workshop papers, preprints,
+              under-review work, code links, project pages, and BibTeX placeholders.
+            </p>
+            <a class="about-button" href="publications.html">View Publications</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-copy"><strong>Jiangtao Kong</strong><p class="muted">Computer Science Ph.D. student at William &amp; Mary.</p><small>© 2026 Jiangtao Kong. All rights reserved.</small></div>
+        <div class="footer-links">
+          <a href="mailto:jkong01@wm.edu">Email</a>
+          <a href="https://scholar.google.com/citations?user=tu5GG9sAAAAJ&hl=zh-CN&oi=ao">Scholar</a>
+          <a href="https://github.com/snowball0823">GitHub</a>
+          <a href="resume/Snowball_Resume_CN.pdf">CV</a>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
