@@ -1752,6 +1752,28 @@ h1 {
   scroll-margin-top: 96px;
 }
 
+.publication-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.publication-title-row .section-title {
+  margin: 0;
+}
+
+.publication-note {
+  margin: 0;
+  color: rgba(247, 242, 232, 0.56);
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  text-align: right;
+}
+
 .publication-year-list {
   display: grid;
   gap: 32px;
@@ -1826,6 +1848,24 @@ h1 {
   color: rgba(247, 242, 232, 0.58);
   font-size: 13px;
   line-height: 1.4;
+}
+
+.publication-authors {
+  margin: -1px 0 0;
+  color: rgba(247, 242, 232, 0.62);
+  font-size: 12.5px;
+  line-height: 1.52;
+}
+
+.publication-authors strong {
+  color: rgba(214, 161, 95, 0.98);
+  font-weight: 820;
+}
+
+.publication-authors sup {
+  color: rgba(214, 161, 95, 0.9);
+  font-size: 0.76em;
+  line-height: 0;
 }
 
 .mini-paper p {
@@ -3157,6 +3197,15 @@ h1 {
 
   .publication-year-group {
     gap: 12px;
+  }
+
+  .publication-title-row {
+    display: grid;
+    gap: 8px;
+  }
+
+  .publication-note {
+    text-align: left;
   }
 
   .selected-paper {
