@@ -3438,9 +3438,45 @@ h1 {
   }
 
   .photo-lightbox-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
     align-items: flex-start;
     flex-direction: column;
     gap: 4px;
+    padding: 58px 18px 20px;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.78));
+  }
+
+  .photo-lightbox {
+    width: 100vw;
+    max-width: none;
+    height: 100dvh;
+    max-height: none;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background: #020305;
+    overflow: hidden;
+  }
+
+  .photo-lightbox img {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: contain;
+    background: #020305;
+  }
+
+  .photo-lightbox-close {
+    top: 14px;
+    right: 14px;
+    padding: 8px 11px;
+    border-color: rgba(244, 240, 232, 0.18);
+    background: rgba(8, 11, 16, 0.72);
+    backdrop-filter: blur(14px);
   }
 
   .home-hero {
