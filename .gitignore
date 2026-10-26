@@ -42,3 +42,15 @@ assets/images/photography/gallery/
 *.raf
 *.raw
 *.heic
+
+# Resume build tools, generated PDFs, and original personal drafts (local only).
+/resume/.tools/
+/resume/.archive/
+/resume/source/build/
+/resume/source/*.aux
+/resume/source/*.out
+/resume/source/*.fls
+/resume/source/*.fdb_latexmk
+/resume/source/*.synctex.gz
+/resume/source/*.xdv
+/resume/source/*.pdf

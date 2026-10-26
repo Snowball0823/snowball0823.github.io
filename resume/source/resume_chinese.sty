@@ -1,0 +1,14 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{resume_chinese}[2026/10/26 Chinese fonts for the resume]
+\RequirePackage{xeCJK}
+
+% Resolve fonts through the TeX distribution, not system-installed Adobe fonts.
+\setCJKmainfont[
+  BoldFont=FandolHei-Bold.otf,
+  ItalicFont=FandolKai-Regular.otf,
+  SmallCapsFont=FandolHei-Regular.otf
+]{FandolSong-Regular.otf}
+\setCJKsansfont{FandolHei-Regular.otf}
+\setCJKmonofont{FandolFang-Regular.otf}
+
+\endinput

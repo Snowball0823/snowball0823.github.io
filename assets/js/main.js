@@ -1,3 +1,10 @@
+// Display control only: hiding the preview does not remove its public assets or metadata.
+const SHOW_SWAN_PREVIEW = true;
+
+document.querySelectorAll("[data-swan-preview]").forEach((item) => {
+  item.hidden = !SHOW_SWAN_PREVIEW;
+});
+
 const navToggle = document.querySelector("[data-nav-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
 

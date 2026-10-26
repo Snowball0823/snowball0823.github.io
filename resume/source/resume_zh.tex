@@ -1,0 +1,127 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{setspace}
+\usepackage{resume_chinese}
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{孔江涛}
+
+\basicInfo{
+  \email{tinysnowball0823@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 157-1881-6338} \textperiodcentered\ 
+  Github \linkedin[Link]{https://github.com/Snowball0823}}
+ 
+\section{\faGraduationCap\  教育背景}
+%\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
+%\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
+\datedsubsection{\textbf{北京工业大学}, 北京, 北京}{2015 -- 2019}
+\textit{学士}\ 电子信息控制工程
+
+%\vspace{-0.2cm}
+\section{\faUsers\ 实习/项目经历}
+\datedsubsection{\textbf{中科院自动化所智能博弈实验室} （北京）}{2018年7月 - 2019年7月}
+\role{实习}{Leader:兴军亮}
+组内研究实习生-学生
+\begin{itemize}
+  \item 学习强化学习基本算法：Q-Learning，A2C，A3C等
+  \item 参与AIIDE StarCraft AI Competition，主要任务：测试分析
+  \item 参与SCII AI的开发，主要任务：编写动作宏，调试工程bug，参与讨论策略\\
+  项目链接：https://github.com/Snowball0823/pysc2-rl\\
+  https://github.com/witwolf/pysc2-rl -> branch:test, macro-active
+\end{itemize}
+
+%\vspace{-0.2cm}
+\datedsubsection{\textbf{北京澎思科技有限公司} （北京）}{2019年10月 - 2020年4月}
+\role{实习}{Leader: 申省梅}
+算法研究员：研究Vehicle ReID，提升ReID精度
+\begin{itemize}
+  \item 参加Vehicle Reidentification， VCIP 2019，获取第二名
+  \item DSAM Loss：提出损失函数，通过metric learning的方法，在欧式空间缩小样本的类内距离、角度空间增大样本的类间距离来增加特区的特征的区分度，以此提升ReID精度
+  \item 实验结果：对比SoftMax Loss，在Vehicle ReID任务中，PKU-VD-1-Large Dataset上mAP提升10.41\%，PKU-VehicleID Dataset上mAP提升9.34\%，VeRi-776 Dataset上mAP提升8.73\%；在Person ReID任务中，DukeMTMC-reID上mAP提升5.10\%，Market1501上mAP提升2.78\%，CUHK03-Detected中mAP提升6.60\%。此loss函数在ReID任务中都可应用，且性能超过Triplet loss和Arcface loss\\
+  论文链接：https://arxiv.org/abs/2011.06228
+%  Paper Name “Global and Local Deep Feature Representation Fusion for Vehicle Re Identification”
+\end{itemize}
+
+\datedsubsection{\textbf{中科院自动化所模式识别国家重点实验室} （北京）}{2020年10月 - }
+\role{实习}{Leader: 万军}
+组内研究实习生
+\begin{itemize}
+  \item 参加人脸属性标注系统的开发与设计
+  \item 参加华为ModelZoo，CV组的开发，将现有的人脸检测模型进行转换，移植到华为云平台上
+  \item 参加人证防伪数据库Face-Anti-spoofing-Datasets的创建、处理与实验，此数据库包含大量样例，并且信息完全且样本多样性与数据库难度与现有的数据库相比将大大的增加。数据库包含了曾参加了Multi-modal Face Anti-spoofing  (Presentation Attack Detection) Challenge@CVPR2019和Multi-modal Face Anti-spoofing  (Presentation Attack Detection) Challenge@CVPR2020的数据，数据库即将发布
+  数据库链接：https://github.com/liuajian/Face-Anti-spoofing-Datasets
+%  Paper Name “Global and Local Deep Feature Representation Fusion for Vehicle Re Identification”
+\end{itemize}
+
+%\vspace{-0.7cm}
+\datedsubsection{\textbf{Human Activity Classification in Video}}{2018年5月 - 2018年11月}
+{\textbf{个人项目}\ }{提升视频中人体动作分类精度}
+%Paper \linkedin[Link]{https://ieeexplore.ieee.org/document/8803586}}
+\begin{itemize}
+  \item 提出STAG module，在原有的I3D backbone上利用pooling操作加入attention
+  \item 相对于Nonelocal Network，STAG的计算量更少. Nonelocal FLOPs：37.9B，STAG FLOPs：31.2B
+  \item 在Kinetics数据集上，STAG比I3D的Top-1提升1.20\%，Top-5提升1.16\%
+  \item 文章已被ICIP收录
+\end{itemize}
+
+\datedsubsection{\textbf{ReID \& Cross Domain}}{2020年6月 - 2020年10月}
+{\textbf{个人项目}\ }{结合跨域提升车辆重识别精度}
+%Paper \linkedin[Link]{https://ieeexplore.ieee.org/document/8803586}}
+\begin{itemize}
+  \item 提出GETN framework以及GEC方法，利用预训练模型通过聚类、生成伪标签的方法，提取数据库的上层信息（类似于属性），在ReID训练中加以辅助已经有的ID标签，并在测试时将提取的特征进行GEC聚类，提升ReID的准确率；在cross domain中直接用GETN提取目标数据库样本的伪标签，并在目标数据库上进行训练，达到提升cross domain任务精度的目的
+  \item 在ReID上的实验结果：在PKU-VehicleID上mAP相对于backbone在Q800，Q1600，Q2400上分别提高了2.14\%，3.03\%,3.00\%。在VeRi-776上，mAP提升了6.60\%。在Market1501上mAP提升了1.30\%，在DukeMTMC-reID上mAP提升了1.90\%
+  \item 在Cross Domain上的实验结果：为Vehicle ReID的Cross Domain提供了basline。在Market1501\\$\longrightarrow$DukeMTMC-reID上，对比backbone，mAP提升了12.70\%，在DukeMTMC-reID$\longrightarrow$Market1501上，mAP提升了6.60\%
+\end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+%\vspace{-0.3cm}
+\section{\faCogs\ IT 技能\&英语}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: Python > C > BASH > C\# / PHP / C++ 
+  \item 系统: Linux，MacOS
+  \item 框架: PyTorch
+  \item 英语: TOEFL 80
+\end{itemize}
+
+%\vspace{-0.25cm}
+\section{\faHeartO\ 获奖情况}
+\datedline{\textit{铜奖}, ACM-ICPC亚洲区域赛}{2017}
+\datedline{\textit{特等奖}，第九届“挑战杯”首都大学生科技作品竞赛}{2017}
+\datedline{\textit{二等奖}，第九届“挑战杯”全国大学生科技作品竞赛}{2017}
+\datedline{\textit{Meritorious Winner}，全美数学建模大赛}{2018}
+\datedline{\textit{三等奖}，第九届蓝桥杯北京赛区A组}{2018}
+
+%\vspace{-0.25cm}
+\section{\faList\ 论文}
+\begin{itemize}
+    \item \datedline{Hidden Attribute Matters: Graph Enhancement Transferable Networkfor Object\\ Re-identification}{CVPR2021 Processing}
+    \item \datedline{DSAM: A Distance Shrinking with AngularMarginalizing Loss for High PerformanceVehicle \\Re-identification}{CVPR2021 Processing}
+    \item \datedline{SPATIAL TEMPORAL ATTENTIONAL GLIMPSE FOR HUMAN ACTIVITYCLASSIFICATION IN VIDEO}{ICIP}
+    \item \datedline{Global And Local Deep Feature Representation Fusion for Vehicle Re-Identification}{VCIP}
+\end{itemize}
+
+%\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+%\begin{itemize}[parsep=0.5ex]
+%  \item 语言: 英语 - (TOEFL 80)
+%\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}

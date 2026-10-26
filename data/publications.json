@@ -1,5 +1,22 @@
 [
   {
+    "id": "swan",
+    "title": "FastWorldPlanner: Advantage-Aware Action-Chunk Policy for Online Planning",
+    "authors": null,
+    "venue": "Manuscript, 2026",
+    "status": "manuscript",
+    "selected": true,
+    "preview": true,
+    "topic": "Model-Based Reinforcement Learning, Online Planning, Control",
+    "summary": "SWAN combines a mixture-of-factor-analyzers action-chunk policy with advantage-guided proposal optimization to improve policy guidance and reduce MPPI refinement iterations.",
+    "figure": "assets/images/figures/swan-pipeline.png",
+    "links": {
+      "paper": null,
+      "code": null,
+      "project": "https://swanfastworldplanner.github.io/"
+    }
+  },
+  {
     "title": "ECA: Efficient Continual Alignment for Open-Ended Image-to-Text Generation",
     "venue": "ICML 2026",
     "status": "accepted",
@@ -48,10 +65,15 @@
   },
   {
     "title": "Lens: A Knowledge-Guided Foundation Model for Network Traffic",
-    "venue": "Under Review",
-    "status": "under-review",
+    "venue": "TMLR 2026",
+    "status": "published",
     "selected": false,
-    "topic": "Foundation Models"
+    "topic": "Foundation Models, Network Traffic",
+    "links": {
+      "paper": "https://openreview.net/forum?id=cGDwTgnJIR",
+      "code": "https://github.com/V-Enzo/Lens-foundation-model-for-network-traffic",
+      "arxiv": "https://arxiv.org/abs/2402.03646"
+    }
   },
   {
     "title": "Hybrid Memory Replay: Blending Real and Distilled Data for Class Incremental Learning",
