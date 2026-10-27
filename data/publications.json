@@ -2,7 +2,18 @@
   {
     "id": "swan",
     "title": "FastWorldPlanner: Advantage-Aware Action-Chunk Policy for Online Planning",
-    "authors": null,
+    "authors": [
+      "Jiangtao Kong",
+      "Yuchen Wang",
+      "Yandong Luo",
+      "Rongchao Xu",
+      "Guang Wang",
+      "Yanbing Mao",
+      "Lu Gan",
+      "Tianyi Zhou",
+      "Huajie Shao"
+    ],
+    "co_advisors": ["Tianyi Zhou", "Huajie Shao"],
     "venue": "Manuscript, 2026",
     "status": "manuscript",
     "selected": true,

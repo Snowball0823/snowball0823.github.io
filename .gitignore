@@ -43,7 +43,8 @@ assets/images/photography/gallery/
 *.raw
 *.heic
 
-# Resume build tools, generated PDFs, and original personal drafts (local only).
+# Resume tools, intermediate build files, and original personal drafts (local only).
+# Final PDFs directly under resume/ are intentionally tracked for GitHub Pages.
 /resume/.tools/
 /resume/.archive/
 /resume/source/build/

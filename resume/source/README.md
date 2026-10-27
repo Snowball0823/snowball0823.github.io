@@ -5,25 +5,49 @@ Only two documents are maintained here:
 - `resume_en.tex`: the English resume, renamed from `resume_updated.tex`.
 - `resume_zh.tex`: the Chinese resume, renamed from `resume-zh_CN.tex`.
 
-The 2026-10-26 cleanup preserves both original document bodies, including dates,
-publication statuses, contact details, and comments. The Chinese version is an
-older resume, not a translation of the current English version. Content updates
-are a separate task. Do not treat either draft as an automatically updated CV.
+The initial 2026-10-26 cleanup preserved both original document bodies. The
+English resume has since been updated with separate Ph.D./M.S. education,
+revised research interests, six selected publications/manuscripts (including
+SWAN and Hybrid Memory Replay), and a `World Models and Reinforcement Learning`
+entry dated `2025--Present`, with separate bullets for WestWorld, SWAN, and
+`Ongoing: Continual RL.` SWAN is labeled `Submitted to ICLR 2027`, as confirmed
+by the author. The Chinese version remains an older resume, not a translation
+of the current English version; synchronizing it is a separate editing task.
 
 ## Build locally
 
 From the repository root:
 
 ```sh
-make -C resume/source       # Build both languages
-make -C resume/source en    # English only
-make -C resume/source zh    # Chinese only
+make -C resume/source       # Build and update both final PDFs
+make -C resume/source en    # Build and update the website's English CV
+make -C resume/source zh    # Build and update the Chinese PDF only
 ```
 
-Outputs:
+Final outputs, relative to the repository root:
 
-- `build/resume_en.pdf`
-- `build/resume_zh.pdf`
+- `resume/Snowball_Resume.pdf`: the default English resume, used by every CV
+  download link on the website.
+- `resume/Snowball_Resume_ZH.pdf`: Chinese, maintained alongside the English
+  version but not linked from the website's navigation or download buttons.
+
+The former English filename `Snowball_Resume_CN.pdf` has been replaced by
+`Snowball_Resume.pdf`; the build no longer produces the former filename. Both
+language PDFs can be generated together, but translating or synchronizing their
+content remains a separate editing step.
+
+Compilation takes place in `resume/source/build/`. After each successful build,
+the final PDF is copied into `resume/` using a temporary file and an atomic
+rename. A failed compilation leaves that language's existing final PDF intact.
+An identical PDF is not copied again. With the default two-language build,
+each language is updated independently, so one can succeed if the other fails.
+
+For a preview without updating the final PDF, run:
+
+```sh
+make -C resume/source build/resume_en.pdf
+make -C resume/source build/resume_zh.pdf
+```
 
 The build prefers a local TinyTeX installation in `resume/.tools/TinyTeX/`.
 If that directory is absent, it uses `latexmk` and `xelatex` from `PATH`.
@@ -81,8 +105,11 @@ overflow warnings in the LaTeX logs; the original Latin fonts remain unchanged.
 Unrelated template examples and the sample avatar were removed without backups.
 The four original personal drafts are retained locally in
 `resume/.archive/2026-10-26/`; they are not additional maintained versions.
-That archive, the local toolchain, and build output are ignored by Git.
+That archive, the local toolchain, and intermediate `source/build/` output are
+ignored by Git. Final PDFs directly under `resume/` are not ignored.
 
-Building does not publish or overwrite `resume/Snowball_Resume_CN.pdf`. Review
-the generated PDF before explicitly updating that public file. The website's
-existing CV links remain unchanged.
+Building updates the local final PDFs but does not commit, push, or deploy them.
+Review the PDF, then commit its source changes together with the final PDF and
+push to the site's publishing branch. Once GitHub Pages finishes deployment,
+the existing CV links serve the updated English PDF. Do not overwrite the
+historical `resume/Snowball_Resume_CN_old.pdf` as part of this workflow.

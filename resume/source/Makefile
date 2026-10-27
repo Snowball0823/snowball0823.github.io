@@ -12,12 +12,21 @@ LATEXMK ?= latexmk
 endif
 
 BUILD_DIR := build
+# The website links only to the default English resume.
+EN_PDF := ../Snowball_Resume.pdf
+ZH_PDF := ../Snowball_Resume_ZH.pdf
 STYLE_DEPS := resume.cls linespacing_fix.sty $(wildcard fonts/Main/*.otf)
 LATEX_FLAGS := -xelatex -interaction=nonstopmode -halt-on-error -file-line-error -outdir=$(BUILD_DIR)
 
 all: en zh
 en: $(BUILD_DIR)/resume_en.pdf
+	@if ! cmp -s "$<" "$(EN_PDF)"; then \
+		cp "$<" "$(EN_PDF).tmp" && mv -f "$(EN_PDF).tmp" "$(EN_PDF)"; \
+	fi
 zh: $(BUILD_DIR)/resume_zh.pdf
+	@if ! cmp -s "$<" "$(ZH_PDF)"; then \
+		cp "$<" "$(ZH_PDF).tmp" && mv -f "$(ZH_PDF).tmp" "$(ZH_PDF)"; \
+	fi
 
 check-tools:
 	@command -v "$(LATEXMK)" >/dev/null || { printf '%s\n' 'latexmk not found. See README.md for TeX setup.'; exit 1; }
