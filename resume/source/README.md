@@ -10,9 +10,11 @@ English resume has since been updated with separate Ph.D./M.S. education,
 revised research interests, six selected publications/manuscripts (including
 SWAN and Hybrid Memory Replay), and a `World Models and Reinforcement Learning`
 entry dated `2025--Present`, with separate bullets for WestWorld, SWAN, and
-`Ongoing: Continual RL.` SWAN is labeled `Submitted to ICLR 2027`, as confirmed
-by the author. The Chinese version remains an older resume, not a translation
-of the current English version; synchronizing it is a separate editing task.
+`Ongoing: Continual RL.` SWAN is labeled `NeurIPS 2026 Workshop;
+submitted to ICLR 2027`, as confirmed by the author on
+2026-11-22. No paper link is included until a public version is available.
+The Chinese version remains an older resume, not a translation of the current
+English version; synchronizing it is a separate editing task.
 
 ## Build locally
 

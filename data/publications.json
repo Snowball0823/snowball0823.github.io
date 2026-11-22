@@ -13,9 +13,10 @@
       "Tianyi Zhou",
       "Huajie Shao"
     ],
-    "co_advisors": ["Tianyi Zhou", "Huajie Shao"],
-    "venue": "Manuscript, 2026",
-    "status": "manuscript",
+    "equal_contributors": ["Jiangtao Kong", "Yuchen Wang"],
+    "co_advisors": ["Lu Gan", "Tianyi Zhou", "Huajie Shao"],
+    "venue": "NeurIPS 2026 Workshop",
+    "status": "workshop",
     "selected": true,
     "preview": true,
     "topic": "Model-Based Reinforcement Learning, Online Planning, Control",
