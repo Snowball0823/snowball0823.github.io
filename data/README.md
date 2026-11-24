@@ -7,17 +7,29 @@ work and News in `index.html`, and related-work links in `research.html`.
 ## SWAN preview
 
 - The user requested a visible preview on 2026-10-26, with an author placeholder.
-- `SHOW_SWAN_PREVIEW` in `assets/js/main.js` controls all four elements marked
+- `SHOW_SWAN_PREVIEW` in `assets/js/main.js` controls the elements marked
   `data-swan-preview`: News, selected work, the publication entry, and related work.
 - Set that flag to `false` to hide them. Update the script version in the affected
   HTML pages when publishing a change so cached scripts do not show the old state.
 - This is a display switch, not privacy protection. HTML, JSON, and the figure
   remain accessible if deployed. To unpublish the material, remove those files
   or entries from the served site as well.
-- Status is `Manuscript, 2026`, not an accepted conference paper. Author order
-  and contribution marks are pending; do not infer them from the anonymous PDF.
-- `links.paper` and `links.code` are null. Do not render buttons until real public
-  URLs are supplied. The project URL comes from the manuscript.
+- The venue label is `NeurIPS 2026 Workshop` and the metadata status is `workshop`.
+  The full arXiv preprint and shorter workshop version share one publication
+  entry, but are distinct versions. Do not imply that the full version is the
+  accepted workshop paper.
+- Keep Jiangtao Kong first and Yuchen Wang second, both marked `*` for equal
+  contribution. Lu Gan, Tianyi Zhou, and Huajie Shao have `†` for co-advising.
+  Preserve the homepage's first-author wording.
+- `links.arxiv` is https://arxiv.org/abs/2611.28616, publicly verified on
+  2026-11-24. Both publication cards label it `arXiv (full version)`.
+- `links.paper` remains null until the shorter workshop version has a public
+  link. Do not use the full arXiv preprint as its substitute.
+- Separate November News entries announce the full arXiv preprint and the
+  workshop acceptance. Only the preprint announcement links to arXiv; the
+  workshop announcement retains the project link.
+- `links.code` remains null. Do not render a Code button until a public URL is
+  supplied. The project URL comes from the manuscript.
 - The October News date is this homepage introduction, not a claimed acceptance
   or arXiv release date.
 - `assets/images/figures/swan-pipeline.png` is Figure 2 from page 4 of

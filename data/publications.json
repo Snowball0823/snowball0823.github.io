@@ -24,8 +24,30 @@
     "figure": "assets/images/figures/swan-pipeline.png",
     "links": {
       "paper": null,
+      "arxiv": "https://arxiv.org/abs/2611.28616",
       "code": null,
       "project": "https://swanfastworldplanner.github.io/"
+    }
+  },
+  {
+    "id": "slow-fast-anomaly-detection",
+    "title": "An Adaptive Slow-Fast Framework for Real-Time Anomaly Detection in Autonomous Driving",
+    "authors": [
+      "Zhenyu Zong",
+      "Yuchen Wang",
+      "Jiangtao Kong",
+      "Xiaochang Li",
+      "Lui Sha",
+      "Huajie Shao"
+    ],
+    "venue": "CoRL 2026",
+    "status": "accepted",
+    "selected": false,
+    "topic": "Anomaly Detection, Autonomous Driving",
+    "links": {
+      "paper": "https://openreview.net/forum?id=eGZ6YMFVzU",
+      "code": null,
+      "project": null
     }
   },
   {
