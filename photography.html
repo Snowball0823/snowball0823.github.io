@@ -9,7 +9,7 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <meta name="theme-color" content="#080b10">
-    <link rel="stylesheet" href="assets/css/styles.css?v=20260613b">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20261124a">
   </head>
   <body>
     <header class="site-header">
@@ -69,10 +69,12 @@
           <div class="photo-section-head">
             <div>
               <p class="photo-edition">Contact Sheet</p>
-              <span>36 Frames</span>
+              <span data-photo-count>36 Frames</span>
             </div>
           </div>
-          <div class="gallery-grid editorial-gallery" data-photo-grid></div>
+          <p class="gallery-status" data-photo-status role="status" tabindex="-1" hidden></p>
+          <button class="gallery-retry" type="button" data-photo-retry hidden>Try again</button>
+          <div class="gallery-grid editorial-gallery" data-photo-grid aria-busy="false"></div>
         </div>
       </section>
 
@@ -97,6 +99,6 @@
         </div>
       </div>
     </footer>
-    <script src="assets/js/main.js?v=20260613b"></script>
+    <script src="assets/js/main.js?v=20261124a"></script>
   </body>
 </html>

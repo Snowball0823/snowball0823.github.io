@@ -12,7 +12,33 @@ SWAN and Hybrid Memory Replay), and a `World Models and Reinforcement Learning`
 entry dated `2025--Present`, with separate bullets for WestWorld, SWAN, and
 `Ongoing: Continual RL.` SWAN is labeled `NeurIPS 2026 Workshop;
 submitted to ICLR 2027`, as confirmed by the author on
-2026-11-22. No paper link is included until a public version is available.
+2026-11-22. Paper links remain omitted for consistency across the selected
+publications, as confirmed by the author on 2026-11-24. The SWAN research
+experience also includes zero-shot sim-to-real velocity tracking on a physical
+Unitree Go2; the publication status wording is unchanged.
+The one-page English resume replaces the earlier Institute of Automation
+internship with `Continual Learning` doctoral research at William & Mary
+(`2023--Present`), covering YoooP and Hybrid Memory Replay. The internship
+remains on the homepage. Existing research entries and the selected publication
+list are otherwise unchanged; no paper links are added.
+The initial replacement spilled onto a second page. More specific descriptions
+cover YoooP's attentional mean-shift prototype optimization and single-prototype
+replay, and Hybrid's checkpoint-based distillation and complementary real-exemplar
+selection. An initial layout used tighter Research Experience spacing to fit
+one page. The final layout instead compacts Education and Research Interests,
+restores normal research line spacing, and adds separation between research
+entries. Publication titles remain bold black, with 9.5pt dark-gray author/venue
+lines and a small gap between papers. Body font sizes, margins, content, and
+shared styles are unchanged. The two new entries are checked for balanced line
+wrapping, and the final English PDF remains one page.
+On 2026-11-24, the ongoing research terminology was synchronized with the website
+as `humanoid whole-body control`. Research Interests uses `Humanoid Whole-Body
+Control` and the Ongoing bullet retains the sequential-task-learning scope. The
+longer interest label initially caused a second page; shortening only the adjacent
+interest label to `Model-Based RL` restored the one-page layout without changing
+font sizes, spacing, or margins. SWAN's formal title remains `Fast World Planner:
+Advantage-Aware Action-Chunk Policy for Online Planning`.
+
 The Chinese version remains an older resume, not a translation of the current
 English version; synchronizing it is a separate editing task.
 

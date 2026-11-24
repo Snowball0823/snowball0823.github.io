@@ -6,6 +6,12 @@
 \usepackage{setspace}
 \usepackage{linespacing_fix}
 \usepackage{cite}
+\usepackage{xcolor}
+\DeclareMathSizes{9.5}{9}{7}{5}
+
+\newcommand{\publicationdetails}[1]{%
+  {\fontsize{9.5}{11}\selectfont\color{black!72}#1\par}%
+}
 
 \begin{document}
 \pagenumbering{gobble}
@@ -21,6 +27,10 @@
   \linkedin[LinkedIn]{https://www.linkedin.com/in/johnson-kong-b824a4295}
   }
 
+\begingroup
+\titlespacing*{\section}{0pt}{1.8ex}{0.9ex}
+\titlespacing*{\subsection}{0pt}{0.9ex}{0.3ex}
+
 \vspace{-0.25cm}
 \section{\faGraduationCap\ Education}
 
@@ -35,39 +45,46 @@
 \vspace{-0.25cm}
 \section{\faBookmark\ Research Interests}
 
-\begin{itemize}[parsep=0.3ex]
-  \item Continual Learning, Multimodal Alignment, Model-Based Reinforcement Learning, Humanoid Control
+\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt]
+  \item Continual Learning, Multimodal Alignment, Model-Based RL, Humanoid Whole-Body Control
 \end{itemize}
+\endgroup
 
 
 \vspace{-0.25cm}
 \section{\faFileText\ Selected Publications \& Manuscripts}
 
-\begin{itemize}[parsep=0.35ex]
+\begin{itemize}[itemsep=2pt, parsep=0pt]
   \small
-  \item \textbf{FastWorldPlanner: Advantage-Aware Action-Chunk Policy for Online Planning}.\\
+  \item \textbf{Fast World Planner: Advantage-Aware Action-Chunk Policy for Online Planning}.\\[0.5pt]
+  \publicationdetails{
   \textbf{Jiangtao Kong}, et al.
-  (\textit{NeurIPS 2026 Workshop; submitted to ICLR 2027})
+  (\textit{NeurIPS 2026 Workshop; submitted to ICLR 2027})}
 
-  \item \textbf{ECA: Efficient Continual Alignment for Open-Ended Image-to-Text Generation}.\\
+  \item \textbf{ECA: Efficient Continual Alignment for Open-Ended Image-to-Text Generation}.\\[0.5pt]
+  \publicationdetails{
   \textbf{Jiangtao Kong}, et al.
-  (\textit{ICML 2026})
+  (\textit{ICML 2026})}
 
-  \item \textbf{WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems}.\\
+  \item \textbf{WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems}.\\[0.5pt]
+  \publicationdetails{
   Yuchen Wang$^*$, \textbf{Jiangtao Kong}$^*$, et al.
-  (\textit{ICML 2026 Spotlight})
+  (\textit{ICML 2026 Spotlight})}
 
-  \item \textbf{ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment}.\\
+  \item \textbf{ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment}.\\[0.5pt]
+  \publicationdetails{
   Hongjue Zhao$^*$, Haosen Sun$^*$, \textbf{Jiangtao Kong}, et al.
-  (\textit{ICLR 2026})
+  (\textit{ICLR 2026})}
 
-  \item \textbf{YoooP: You Only Optimize One Prototype per Class for Non-Exemplar Incremental Learning}.\\
+  \item \textbf{YoooP: You Only Optimize One Prototype per Class for Non-Exemplar Incremental Learning}.\\[0.5pt]
+  \publicationdetails{
   \textbf{Jiangtao Kong}, et al.
-  (\textit{TMLR 2025})
+  (\textit{TMLR 2025})}
 
-  \item \textbf{Hybrid Memory Replay: Blending Real and Distilled Data for Class Incremental Learning}.\\
+  \item \textbf{Hybrid Memory Replay: Blending Real and Distilled Data for Class Incremental Learning}.\\[0.5pt]
+  \publicationdetails{
   \textbf{Jiangtao Kong}, et al.
-  (\textit{arXiv 2024})
+  (\textit{arXiv 2024})}
 \end{itemize}
 \vspace{-0.5em}
 {\small $^*$Equal contribution.}
@@ -76,12 +93,17 @@
 \vspace{-0.25cm}
 \section{\faUsers\ Research Experience}
 
+\begingroup
+\setstretch{1}
+\titlespacing*{\subsection}{0pt}{1.6ex}{0.5ex}
+\setlist[itemize]{topsep=0.1em, leftmargin=1.5pc}
+
 \datedsubsection{\textbf{World Models and Reinforcement Learning}}{2025 -- Present}
 \role{\textbf{Doctoral Research}}{William \& Mary}
 \begin{itemize}[parsep=0.35ex]
   \item \textbf{WestWorld.} Co-developed a knowledge-encoded trajectory world model for dynamics prediction and model-based control across diverse robotic systems.
-  \item \textbf{SWAN.} Developed action-chunk policies and advantage-guided proposal optimization for efficient online planning, using 50\% fewer MPPI refinement iterations across 31 continuous-control tasks.
-  \item \textbf{Ongoing: Continual RL.} Investigating humanoid control through sequential task learning, focusing on skill transfer, sample efficiency, and retention of previously learned skills.
+  \item \textbf{SWAN.} Developed action-chunk policies and advantage-guided proposal optimization for efficient online planning, using 50\% fewer MPPI refinement iterations across 31 continuous-control tasks. Demonstrated zero-shot sim-to-real transfer to a physical Unitree Go2 for stable velocity tracking.
+  \item \textbf{Ongoing: Continual RL.} Investigating humanoid whole-body control through sequential task learning, focusing on skill transfer, sample efficiency, and retention of previously learned skills.
 \end{itemize}
 
 \datedsubsection{\textbf{JPMorgan Chase \& Co.}, New York, NY}{06/2024 -- 08/2024; 09/2024 -- 12/2024}
@@ -91,11 +113,13 @@
   \item Built four topic-shifted image captioning and VQA benchmarks to evaluate adaptation and forgetting in open-ended image-to-text generation.
 \end{itemize}
 
-\datedsubsection{\textbf{Institute of Automation, Chinese Academy of Sciences}, Beijing, China}{10/2020 -- 06/2021}
-\role{\textbf{Research Intern}}{Leader: Jun Wan}
+\datedsubsection{\textbf{Continual Learning}}{2023 -- Present}
+\role{\textbf{Doctoral Research}}{William \& Mary}
 \begin{itemize}[parsep=0.35ex]
-  \item Conducted research on person/vehicle re-identification and face detection, including model adaptation and deployment for computer vision systems.
+  \item \textbf{YoooP.} Developed attentional mean-shift prototype optimization to reduce inter-class interference, enabling class-incremental learning by replaying one prototype per class without storing old images.
+  \item \textbf{Hybrid Memory Replay.} Combined checkpoint-based data distillation with complementary real-exemplar selection to mitigate catastrophic forgetting under a limited replay memory budget.
 \end{itemize}
+\endgroup
 
 % \datedsubsection{\textbf{Pensees}, Beijing, China}{10/2019 -- 04/2020}
 % \role{\textbf{Algorithm Research Intern}}{Leader: Shengmei Shen}

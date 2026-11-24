@@ -32,6 +32,9 @@ if (newsToggle && extraNewsItems.length > 0) {
 }
 
 const photoGrid = document.querySelector("[data-photo-grid]");
+const photoStatus = document.querySelector("[data-photo-status]");
+const photoRetry = document.querySelector("[data-photo-retry]");
+const photoCount = document.querySelector("[data-photo-count]");
 const photoLightbox = document.querySelector("[data-photo-lightbox]");
 const photoLightboxImage = document.querySelector("[data-photo-lightbox-image]");
 const photoLightboxTitle = document.querySelector("[data-photo-lightbox-title]");
@@ -40,6 +43,7 @@ const photoLightboxClose = document.querySelector("[data-photo-lightbox-close]")
 let loadedPhotos = [];
 let renderedPhotoColumnCount = 0;
 let photoResizeFrame = null;
+let photosLoading = false;
 
 function escapeHtml(value) {
   return String(value)
@@ -128,21 +132,67 @@ function renderPhotoColumns(photos) {
 }
 
 async function renderPhotos() {
-  if (!photoGrid) return;
+  if (!photoGrid || photosLoading) return;
+
+  const restoreRetryFocus = photoRetry && document.activeElement === photoRetry;
+  photosLoading = true;
+  photoGrid.setAttribute("aria-busy", "true");
+  if (photoStatus) {
+    photoStatus.hidden = false;
+    photoStatus.textContent = "Loading photographs...";
+  }
+  if (photoRetry) photoRetry.disabled = true;
+
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), 15000);
 
   try {
-    const response = await fetch("data/photos.json");
-    if (!response.ok) return;
+    const response = await fetch("data/photos.json", {
+      signal: controller.signal,
+      cache: "no-cache",
+    });
+    if (!response.ok) throw new Error(`Gallery request failed: ${response.status}`);
     const photos = await response.json();
 
-    if (!Array.isArray(photos) || photos.length === 0) return;
+    if (!Array.isArray(photos) || photos.some((photo) => (
+      !photo || typeof photo.src !== "string" || !photo.src.trim()
+    ))) {
+      throw new Error("Invalid gallery data");
+    }
 
     loadedPhotos = photos;
     renderPhotoColumns(loadedPhotos);
-  } catch (error) {
-    return;
+    if (photoCount) photoCount.textContent = `${photos.length} ${photos.length === 1 ? "Frame" : "Frames"}`;
+    if (photoStatus) {
+      photoStatus.textContent = photos.length ? "" : "No photographs are available yet.";
+      photoStatus.hidden = photos.length > 0;
+    }
+    if (photoRetry) {
+      if (restoreRetryFocus && (
+        document.activeElement === photoRetry || document.activeElement === document.body
+      )) {
+        const focusTarget = photoGrid.querySelector(".photo-card") || photoStatus;
+        focusTarget?.focus({ preventScroll: true });
+      }
+      photoRetry.hidden = true;
+    }
+  } catch {
+    if (photoStatus) photoStatus.textContent = "Photographs could not be loaded. Please try again.";
+    if (photoRetry) photoRetry.hidden = false;
+  } finally {
+    window.clearTimeout(timeout);
+    photosLoading = false;
+    photoGrid.setAttribute("aria-busy", "false");
+    if (photoRetry) {
+      photoRetry.disabled = false;
+      if (restoreRetryFocus && !photoRetry.hidden && document.activeElement === document.body) {
+        photoRetry.focus({ preventScroll: true });
+      }
+    }
   }
 }
+
+if (photoRetry) photoRetry.addEventListener("click", renderPhotos);
 
 renderPhotos();
 
